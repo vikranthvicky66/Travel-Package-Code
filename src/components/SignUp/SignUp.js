@@ -5,12 +5,9 @@ import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { addLoggedinUser } from '../../Redux/Actions/appActions';
-import { defaulftLoggingFramework } from '../Login/LoginManager';
 import { createUserWithEmailAndPassword } from './SignUpManager';
 
 const SignUp = ({user, addLoggedinUser}) => {
-    //call login framework
-    defaulftLoggingFramework();
 
     //local state
     const [localUser, setLocalUser] = useState({
